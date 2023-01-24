@@ -9,13 +9,15 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { VetToolbarComponent } from './components/shared/vet-toolbar/vet-toolbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppointmentsComponent } from './components/appointments/appointments.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
         PageNotFoundComponent,
-        VetToolbarComponent
+        VetToolbarComponent,
+        AppointmentsComponent
     ],
     imports: [
         BrowserModule,
