@@ -19,4 +19,9 @@ export class UsersApiService extends BaseApiService {
         return this.http.get<User[]>(this.apiUrl)
             .pipe(catchError(this.handleError));
     }
+
+    authenticateUser(userId: number) {
+        return this.http.post(this.apiUrl, userId)
+            .pipe(catchError(this.handleError));
+    }
 }
