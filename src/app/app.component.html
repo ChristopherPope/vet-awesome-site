@@ -1,15 +1,13 @@
-<p>
-    <mat-toolbar color="primary">
-        <button mat-icon-button>
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span>Vet Awesome</span>
-        <span class="toolbar-spacer"></span>
+<mat-toolbar color="primary" style="margin:0px;border:0px;">
+    <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Vet Awesome</span>
+    <span class="toolbar-spacer"></span>
 
-        <mat-icon class="role-icon">{{user.roleIconName}}</mat-icon>
-        <span>{{user.name}}</span>
-    </mat-toolbar>
-</p>
+    <mat-icon class="role-icon">{{user.roleIconName}}</mat-icon>
+    <span>{{user.name}}</span>
+</mat-toolbar>
 
 
 <router-outlet></router-outlet>

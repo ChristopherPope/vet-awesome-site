@@ -7,7 +7,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'appointments', component: AppointmentsComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/appointments', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
