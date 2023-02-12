@@ -25,15 +25,13 @@ import { AuthService } from 'src/app/services/auth.service';
                 let user = null;
                 users.forEach(u => 
                     {
-                        u.roleIconName = this.roleIconNames[u.roleId];
-                        alert(`${u.name} ${u.roleId}`)
+                        u.roleIconName = this.roleIconNames[u.roleId - 1];
                         if (u.roleId == UserRole.Secretary)
                         {
                             user = u;
                         }
                     });
                 this.users = users;
-                alert(user == null); 
                 if (user != undefined)
                 {
                     this.onRowClicked(user);
