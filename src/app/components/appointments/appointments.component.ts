@@ -14,17 +14,5 @@ export class AppointmentsComponent implements OnInit {
         private usersApi: UsersApiService) {}
 
     ngOnInit(): void {
-        debugger
-        let user:User = {
-            name: "Bubba Fett",
-            id: 1,
-            roleId: 1,
-            roleIconName: "typewriter"
-        } ;
-
-        this.usersApi.authenticateUser(user.id)
-            .subscribe(() => {
-                this.authSvc.setCurrentUser(user);
-            });
     }
 }
